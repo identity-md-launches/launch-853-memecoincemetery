@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "MemecoinCemetery",
+      "constructorArgs": []
+    }
+  ],
+  "notes": "Deploy the accepted MemecoinCemetery application for Ethereum mainnet. Its implicit nonpayable constructor takes no arguments and needs no initialization. The application is tokenless, fee-free, ownerless and immutable, and rejects ETH transfers and payable calls. Each token can have one wake or permanent grave. A wake lasts 30 days and permits an epitaph of at most 140 bytes. Before the deadline, a caller holding at least 0.1% of the current reported total supply can cancel the wake; re-digging is allowed 30 days after cancellation. Anyone can seal an unopposed wake at or after its deadline. Token reads use try/catch, and reverting reads prevent digging. Build prerequisite remains unresolved in the accepted checkout: foundry.toml is absent, and the required bytecode_hash = \"none\" and cbor_metadata = false settings must be supplied before release. Source verification remains a release requirement; this manifest does not attest verification."
+}
